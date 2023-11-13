@@ -23,6 +23,7 @@ WITH QueryList AS(
 SELECT
     ql.query_id,
     ql.plan_id,
+	ql.plan_type_desc,
     CAST(ql.query_plan as XML) AS query_plan,
     qt.query_sql_text,
     rs.last_execution_time,

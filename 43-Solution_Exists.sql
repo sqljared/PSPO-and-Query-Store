@@ -3,6 +3,7 @@ GO
 SELECT
     qsq.query_id,
     qsp.plan_id,
+	qsp.plan_type_desc,
     CAST(qsp.query_plan as XML) AS query_plan,
     qt.query_sql_text,
     rsi.end_time,
